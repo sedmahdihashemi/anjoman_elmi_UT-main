@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'sahel';
+    src: url(./../public/fonts/Sahel.ttf);
+}
+@font-face {
+    font-family: 'sahel_bld';
+    src: url(./../public/fonts/Sahel-Bold.ttf);
+}
+
+p,input{
+    font-family: 'sahel'!important;
+}
+
+h1,h2,h3,a{
+    font-family: 'sahel_bld'!important;
+}
