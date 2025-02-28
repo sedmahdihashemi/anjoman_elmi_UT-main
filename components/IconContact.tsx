@@ -6,7 +6,7 @@ import { Chip } from '@nextui-org/chip';
 
 export default function IconContact() {
   return (
-    <Link href={'https://t.me/urban_studies_admin'} target='_blank'  className='group flex items-center gap-2  w-24 fixed bottom-0 right-0'>
+    <Link href={'https://t.me/urban_studies_admin'} target='_blank'  className='group flex items-center gap-2  w-24 fixed bottom-4 right-4'>
     <section className='flex items-center gap-2 '>
     <div className='bg-primary rounded-full flex justify-center items-center w-16 h-16'>
     <MdOutlineMessage size={35} className='' />

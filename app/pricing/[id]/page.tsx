@@ -1,6 +1,7 @@
 import React from 'react'
 import {QueryClient} from 'react-query'
-import { getEvents } from '@/services/api/events'
+import { getEvents, getOneEvent } from '@/services/api/events'
+import { TvalGetDataEvents } from '@/types'
 export default async function Page({
   params,
 }: {
@@ -8,13 +9,13 @@ export default async function Page({
 }) {
   const id = (await params).id
   const queryClient = new QueryClient()
-const data = await queryClient.fetchQuery({
-  queryKey : ['getEvents'],
-  queryFn : getEvents
-})
-console.log(data);
+  const data:TvalGetDataEvents[] = await queryClient.fetchQuery({
+    queryKey: ['getOneEvent', id], // ارسال id در queryKey
+    queryFn: () => getOneEvent(id), // پاس دادن id به getOneEvent
+  })
+console.log(data[0].image);
 
 
 
-  return <div>My Post: {data[0].desc}</div>
+  return <div>My Post: {data[0].id}</div>
 }

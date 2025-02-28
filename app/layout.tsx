@@ -34,7 +34,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
+
   return (
     <html suppressHydrationWarning lang="fa" dir="rtl">
       <head />
@@ -44,7 +44,7 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-         
+
 
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
@@ -52,10 +52,10 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow overflow-hidden">
               {children}
             </main>
-           <IconContact />
+            <IconContact />
           </div>
         </Providers>
-        
+
       </body>
     </html>
   );

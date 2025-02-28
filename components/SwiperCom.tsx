@@ -49,7 +49,7 @@ export default function SwiperCom() {
     return(
       <SwiperSlide key={val.id} className='!flex !justify-center'>
           <Link href={`/pricing/${val.id}`} className='!flex !justify-center w-full'>
-            <Image className='lg:!w-4/12 lg:!h-fit' height={600} width={200} src={val.image} alt='swiper' />
+            <Image className='w-full lg:!w-4/12 lg:!h-fit' height={600} width={200} src={val.image} alt='swiper' />
           </Link>
         </SwiperSlide>
     )

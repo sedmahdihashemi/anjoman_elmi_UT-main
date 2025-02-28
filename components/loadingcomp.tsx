@@ -1,11 +1,12 @@
 // import {Button} from "@heroui/react";
 
-import { Button } from "@nextui-org/button";
+// import { Spinner } from "@heroui/spinner";
+
+import { Spinner } from "@heroui/react";
+// import { Button } from "@nextui-org/button";
 
 export default function LoadingComp() {
     return (
-        <Button isLoading>
-
-        </Button>
+        <Spinner  variant="default" />
     );
 }
