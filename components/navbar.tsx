@@ -52,7 +52,7 @@ export const Navbar = () => {
   // console.log(path);
 
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar maxWidth="xl"  className="fixed">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/home">
@@ -83,7 +83,7 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
+        <NavbarItem className="hidden lg:flex gap-2">
           
           <ThemeSwitch />
         </NavbarItem>
@@ -92,7 +92,7 @@ export const Navbar = () => {
       </NavbarContent>
 
         <SelectOption />
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+      <NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
         
         <ThemeSwitch />
         <NavbarMenuToggle />

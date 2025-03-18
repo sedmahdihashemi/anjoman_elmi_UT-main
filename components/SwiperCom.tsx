@@ -21,7 +21,8 @@ export default function SwiperCom() {
 
   const getDataEvents = useQuery({
     queryKey: 'events',
-    queryFn: getEvents
+    queryFn: getEvents,
+    retry:false
   })
 
   if(getDataEvents.isLoading){
@@ -42,7 +43,7 @@ export default function SwiperCom() {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper lg:!h-[90%]"
+        className="mySwiper !pt-10 my-10"
         >
           {
    getDataEvents?.data?.map((val:TvalGetDataEvents)=>{

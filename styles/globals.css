@@ -18,3 +18,16 @@ p,input{
 h1,h2,h3,a{
     font-family: 'sahel_bld'!important;
 }
+
+
+
+
+
+
+
+@layer base {
+  
+  body {
+    @apply bg-background text-foreground;
+    }
+}

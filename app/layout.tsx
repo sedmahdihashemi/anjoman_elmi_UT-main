@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
+
 import clsx from "clsx";
 
 import { Providers } from "./providers";
@@ -49,7 +49,7 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow overflow-hidden">
+            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow ">
               {children}
             </main>
             <IconContact />

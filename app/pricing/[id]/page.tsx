@@ -1,7 +1,9 @@
 import React from 'react'
 import {QueryClient} from 'react-query'
-import { getEvents, getOneEvent } from '@/services/api/events'
+// import {getOneEvent} from '@/services/api/events'
 import { TvalGetDataEvents } from '@/types'
+import PricingComponent from './pricing-cc'
+import { getOneEvent } from '@/services/api/events'
 export default async function Page({
   params,
 }: {
@@ -9,13 +11,13 @@ export default async function Page({
 }) {
   const id = (await params).id
   const queryClient = new QueryClient()
-  const data:TvalGetDataEvents[] = await queryClient.fetchQuery({
+  const getOneEventQuery:TvalGetDataEvents[] = await queryClient.fetchQuery({
     queryKey: ['getOneEvent', id], // ارسال id در queryKey
     queryFn: () => getOneEvent(id), // پاس دادن id به getOneEvent
   })
-console.log(data[0].image);
+// console.log(getOneEvent[0].image);
 
 
 
-  return <div>My Post: {data[0].id}</div>
+  return <PricingComponent getOneEventQuery={getOneEventQuery} />
 }
