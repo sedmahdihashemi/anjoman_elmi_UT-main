@@ -9,6 +9,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import IconContact from "@/components/IconContact";
+import Footer from "@/components/footer";
 // import { QueryClient, QueryClientProvider } from "react-query";
 
 export const metadata: Metadata = {
@@ -53,6 +54,7 @@ export default function RootLayout({
               {children}
             </main>
             <IconContact />
+            <Footer />
           </div>
         </Providers>
 

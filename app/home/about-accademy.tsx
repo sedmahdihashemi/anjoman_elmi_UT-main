@@ -1,5 +1,6 @@
 'use client'
 import { TextEffect } from '@/components/ui/text-effect';
+import Cookies from 'js-cookie';
 import { useEffect, useState } from 'react';
 
 export function AboutAccademy() {
@@ -7,12 +8,12 @@ export function AboutAccademy() {
     
     const [isStart, setIsStart] = useState<boolean>(() => {
         // مقدار ذخیره‌شده در sessionStorage را بررسی کن
-        return sessionStorage.getItem("hasAnimated") === "true";
+        return Cookies.get("hasAnimated") === "true";
     });
 
     useEffect(() => {
         if (!isStart) {
-            sessionStorage.setItem("hasAnimated", "true");
+            Cookies.set("hasAnimated", "true");
         }
     }, [isStart]);
     return (

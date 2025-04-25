@@ -35,10 +35,10 @@ export function AnimatedGroupCustomVariants() {
             {imagesArr.map((imgSrc, index) => {
               return (
                 <>
-                  <Tilt rotationFactor={8} isRevese>
+                  <Tilt rotationFactor={8} isRevese className="">
                   <Spotlight
-                        className="z-10 from-white/50 via-white/20 to-white/10 blur-2xl"
-                        size={248}
+                        className="z-10  blur-2xl"
+                        size={40}
                         springOptions={{
                           stiffness: 26.7,
                           damping: 4.1,

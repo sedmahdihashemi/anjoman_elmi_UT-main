@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "انجمن علمی ",
+  description: "سایت رسمی انجمن علمی دانشگاه تهران",
   navItems: [
     {
       label: "صفحه اصلی",
@@ -11,28 +11,28 @@ export const siteConfig = {
     },
     {
       label: "دوره آموزشی",
-      href: "/docs",
+      href: "",
      
     },
     {
       label: "رویدادها",
-      href: "/pricing",
+      href: "",
     },
     {
       label: "رسانه",
-      href: "/blog",
+      href: "",
     },
     {
       label: "درباره ی انجمن",
-      href: "/about",
+      href: "",
     },
     {
       label: "عضویت در انجمن",
-      href: "/",
+      href: "",
     },
     {
       label: "تماس با ما",
-      href: "/",
+      href: "",
     },
   ],
   navMenuItems: [
@@ -43,32 +43,32 @@ export const siteConfig = {
     },
     {
       label: "دوره آموزشی",
-      href: "/docs",
+      href: "",
      
     },
     {
       label: "رویدادها",
-      href: "/pricing",
+      href: "",
     },
     {
       label: "رسانه",
-      href: "/blog",
+      href: "",
     },
     {
       label: "درباره ی انجمن",
-      href: "/about",
+      href: "",
     },
     {
       label: "عضویت در انجمن",
-      href: "/",
+      href: "",
     },
     {
       label: "تماس با ما",
-      href: "/",
+      href: "",
     },
     {
       label: "Logout",
-      href: "/logout",
+      href: "",
     },
   ],
   links: {
