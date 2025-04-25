@@ -7,10 +7,6 @@ import React, { useState } from "react";
 import { SiAparat, SiTelegram } from "react-icons/si";
 
 export default function Footer() {
-  // console.log('zahra');
-  // const [zahra , setZahra] = useState(33)
-  // console.log(zahra  + 10);
-
   return (
     <>
       <footer className="footer-1 w-full h-full  py-8 sm:py-24 bg-fixed  bg-[url('/op.jpg')] bg-cover">
